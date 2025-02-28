@@ -152,3 +152,34 @@ img {
 .sound-toggle:hover {
     background: #666;
 }
+
+
+
+
+
+.notification {
+    position: fixed;
+    top: -60px; /* Start position */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: #ffcc00;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: top 0.6s ease-in-out, opacity 0.6s;
+    opacity: 0;
+    z-index: 2000;
+}
+
+.notification.show {
+    top: 20px; /* Moves into view */
+    opacity: 1;
+}
+
+.close-btn {
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}

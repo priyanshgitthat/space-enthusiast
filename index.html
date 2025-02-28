@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA API - Vertical Tabs</title>
+    <title>Live Space News</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div id="notification" class="notification">
+        Get real-time asteroid and space event alerts!
+        <span class="close-btn" onclick="closeNotification()">✖</span>
+    </div>
+    
         <!-- Space Sound Toggle -->
         <button class="sound-toggle" onclick="toggleSound()">🔊</button>
     
@@ -18,7 +23,7 @@
 
     <div class="tabs">
         <div class="tab active" data-target="apod">APOD</div>
-        <div class="tab" data-target="mars">Mars Rover Photos</div>
+        <div class="tab" data-target="mars">Live Mars Rover Photos</div>
         <div class="tab" data-target="neo">Near-Earth Objects</div>
         <div class="tab" data-target="epic">EPIC Earth Images</div>
         <div class="tab" data-target="library">NASA Image Library</div>

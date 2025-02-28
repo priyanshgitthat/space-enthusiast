@@ -140,3 +140,26 @@ const API_KEY = "ECERNKGNotYOXh9zU7XHhq3iBdfuGPSP5mdtUAuL"; // Your NASA API Key
         //         audio.pause();
         //     }
         // });
+
+
+
+
+
+        function showNotification() {
+            let notification = document.getElementById("notification");
+            notification.classList.add("show");
+        
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                closeNotification();
+            }, 5000);
+        }
+        
+        function closeNotification() {
+            let notification = document.getElementById("notification");
+            notification.classList.remove("show");
+        }
+        
+        // Show notification when site loads
+        window.addEventListener("load", showNotification);
+        
