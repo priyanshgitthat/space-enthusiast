@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Space News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="notification" class="notification">
+        Get real-time asteroid and space event alerts!
+        <span class="close-btn" onclick="closeNotification()">✖</span>
+    </div>
+    
+        <!-- Space Sound Toggle -->
+        <button class="sound-toggle" onclick="toggleSound()">🔊</button>
+    
+        <audio id="space-sound" loop autoplay>
+            <source src="./noncopyright-music-pianos-295174.mp3" type="audio/mpeg">
+        </audio>
+        
+
+    <div class="tabs">
+        <div class="tab active" data-target="apod">APOD</div>
+        <div class="tab" data-target="mars">Live Mars Rover Photos</div>
+        <div class="tab" data-target="neo">Near-Earth Objects</div>
+        <div class="tab" data-target="epic">EPIC Earth Images</div>
+        <div class="tab" data-target="library">NASA Image Library</div>
+        <div class="tab" data-target="exoplanets">Exoplanet Data</div>
+    </div>
+
+    <div class="content-container">
+        <div id="apod" class="content active">Loading APOD data...</div>
+        <div id="mars" class="content">Loading Mars Rover Photos...</div>
+        <div id="neo" class="content">Loading Near-Earth Objects data...</div>
+        <div id="epic" class="content">Loading EPIC Earth Images...</div>
+        <div id="library" class="content">Loading NASA Image Library...</div>
+        <div id="exoplanets" class="content">Loading Exoplanet Data...</div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+
+</body>
+</html>
